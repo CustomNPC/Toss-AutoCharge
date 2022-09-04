@@ -1,23 +1,28 @@
 # Toss-AutoCharge
 > Autocharge Web Server for toss.me<br/>
-Btw, u should randomize name in your bot/client
+Btw, **u should randomize sender name** in your bot/client
 
 # Installation
 just ran `go run main.go`<br/>
 ima add more info soon
 
 # Usage
-POST http://127.0.0.1:8080<br/>
+POST http://127.0.0.1:8080/check<br/>
 Content-Type JSON<br/>
-Body {<br/>
-  "tossId": "Toss-ID HERE",<br/>
-  "name": "senderName",<br/>
-  "amount": amount<br/>
-}
-
-Response:<br/>
+Body
+```json
 {
-  "success": bool,
-  "found": bool,
+    "tossId": "Toss-ID HERE",
+    "name": "senderName",
+    "amount": amount
+}
+```
+
+Response:
+```json
+{
+  "success": boolean,
+  "found": boolean,
   "message": "an error message if success is false"
 }
+```
