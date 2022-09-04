@@ -2,6 +2,8 @@
 > Autocharge Web Server for toss.me<br/>
 Btw, **u should randomize sender name** in your bot/client
 
+Create a issue/pr if there is a bug or smth
+
 # Installation
 just ran `go run main.go`<br/>
 ima add more info soon
