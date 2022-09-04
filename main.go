@@ -16,18 +16,6 @@ type RequestBody struct {
 	amount string
 }
 
-type tossTransaction struct {
-	cashtagTransferId         float64
-	cashtagTransferMethodType string
-	senderProfile             bool
-	senderDisplayName         string
-	senderImageUrl            string
-	transferedTs              string
-	amount                    float64
-	msg                       bool
-	feedback                  bool
-}
-
 func contains(s []float64, e float64) bool {
 	for _, a := range s {
 		if a == e {
@@ -38,8 +26,6 @@ func contains(s []float64, e float64) bool {
 }
 
 func main() {
-	// var charged map[float64][]interface{}
-	// charged map[]float64
 	var charged = make([]float64, 0)
 
 	server := gin.Default()
