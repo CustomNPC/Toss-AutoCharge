@@ -14,3 +14,10 @@ Body {<br/>
   "name": "senderName",<br/>
   "amount": amount<br/>
 }
+
+Response:<br/>
+{
+  "success": bool,
+  "found": bool,
+  "message": "an error message if success is false"
+}
